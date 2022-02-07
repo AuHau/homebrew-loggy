@@ -5,21 +5,21 @@
 class Loggy < Formula
   desc "Swiss knife for logs."
   homepage "https://github.com/auhau/loggy"
-  version "0.1.1"
+  version "0.2.0"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/AuHau/loggy/releases/download/v0.1.1/loggy-darwin-arm64.tar.gz"
-      sha256 "bbe7d8eba9676b868d5cd6c4738713584daded157bba5e36322932ffb256378e"
+      url "https://github.com/AuHau/loggy/releases/download/v0.2.0/loggy-darwin-arm64.tar.gz"
+      sha256 "cf22436c02f15c0517dd4a574f0502473418db8984fca6e4f2c42cf2885117a9"
 
       def install
         bin.install "loggy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/AuHau/loggy/releases/download/v0.1.1/loggy-darwin-amd64.tar.gz"
-      sha256 "c37586bcae67acc8c8651a8eae451119898c13a9b6e2fce015c958e01ceef534"
+      url "https://github.com/AuHau/loggy/releases/download/v0.2.0/loggy-darwin-amd64.tar.gz"
+      sha256 "5c1221d69821ac7a0a36b0aac15cecd2eeec1ae0cbe545c32a0325f029d04f5e"
 
       def install
         bin.install "loggy"
